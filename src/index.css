@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+  DarkBlue: "hsl(209, 23%, 22%)",
+        VeryDarkerBlue: "hsl(207, 26%, 17%)",
+        VeryDarkBlue: "hsl(200, 15%, 8%)",
+        DarkGray: "hsl(0, 0%, 52%)",
+        VeryLightGray: "hsl(0, 0%, 98%)",
+         */

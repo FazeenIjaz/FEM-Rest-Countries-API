@@ -10,16 +10,16 @@ const filterRegion = () => {
     console.log(filterValue);
   };
   return (
-    <div className="flex flex-col items-center gap-3">
+    <div className="flex flex-col items-center gap-3 dark:bg-DarkBlue dark:text-white  bg-VeryLightGray">
       <button
-        className="flex justify-between gap-2 bg-white  p-[10px] rounded-sm items-center"
+        className="flex justify-between gap-2  p-[10px] rounded-sm items-center"
         onClick={() => setShowRegions(!showRegions)}
       >
         <span className="">Filter by region</span>
         {showRegions ? <FaChevronUp /> : <FaChevronDown />}
       </button>
       {showRegions && (
-        <div className="bg-white p-[5px] pl-[10px] text-[16px] shadow-xl rounded-sm w-[180px] fixed md:top-[27%]  top-[42%] md:right-[0px] sm:right-[38%] xs:right-[30%]">
+        <div className=" dark:bg-DarkBlue dark:text-white  bg-VeryLightGray p-[5px] pl-[10px] text-[16px] shadow-xl rounded-sm w-[180px] fixed md:top-[27%]  top-[42%] md:right-[10px] sm:right-[38%] xs:right-[30%]">
           <ul
             className="flex flex-col gap-1"
             onClick={() => setShowRegions(!showRegions)}

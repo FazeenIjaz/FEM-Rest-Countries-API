@@ -23,9 +23,9 @@ const CountryDetail = () => {
     fetchData();
   }, []);
   return (
-    <div className="px-5 md:px-10 pt-8 min-h-screen bg-white dark:bg-blue-950">
+    <div className="px-5 md:px-10 pt-8 min-h-screen dark:bg-VeryDarkerBlue dark:text-white bg-VeryLightGray text-VeryDarkBlue">
       <button
-        className="px-8 py-8  flex items-center gap-2 "
+        className="px-8 py-8  flex  dark:text-white  text-VeryDarkBlue items-center gap-2 "
         onClick={goBack}
       >
         <IoArrowBackOutline />

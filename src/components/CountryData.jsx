@@ -28,10 +28,11 @@ const CountryData = ({ country }) => {
 
   const navigatetoborder = (border) => {
     navigate(`/detail/${border.name.common}`);
+    console.log(" navigating to : ", border.name.common);
   };
 
   return (
-    <div className="flex flex-col justify-between gap-10">
+    <div className="flex flex-col justify-between gap-10 dark:text-white text-VeryDarkerBlue">
       <div className="flex items-center justify-center">
         <h2 className="text-[30px] font-bold">{country.name.common}</h2>
       </div>
@@ -48,6 +49,7 @@ const CountryData = ({ country }) => {
               <li className="">
                 <span className="text-[19px] font-semibold">Native Name: </span>
                 {nativeName.common}
+                {/* {country.name.common} */}
               </li>
               <li className="">
                 <span className="text-[19px] font-semibold">Population: </span>
@@ -90,7 +92,7 @@ const CountryData = ({ country }) => {
               <div className="cursor-pointer flex gap-2 p-[5px] flex-wrap">
                 {borderCountries.map((border) => (
                   <span
-                    className="bg-gray-200 block py-[6px] px-[8px] rounded-sm border  hover:border hover:border-black"
+                    className="bg-gray-200 dark:bg-DarkGray dark:text-DarkBlue block py-[6px] px-[8px] rounded-sm border dark:border-black  hover:border hover:border-black dark:hover:border-white"
                     key={border.cca3}
                     onClick={() => navigatetoborder(border)}
                   >
@@ -98,6 +100,7 @@ const CountryData = ({ country }) => {
                   </span>
                 ))}
               </div>
+             
             </>
           )}
         </div>

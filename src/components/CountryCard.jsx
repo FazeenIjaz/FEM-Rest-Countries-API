@@ -9,7 +9,7 @@ const CountryCard = ({ data }) => {
   return (
     <div className="mx-auto">
       <div
-        className="rounded-lg cursor-pointer transition-all ease-in-out duration-300 hover:scale-105 md:w-64 bg-white dark:bg-blue-950 dark:text-white shadow-md hover:shadow-2xl"
+        className="rounded-lg cursor-pointer transition-all ease-in-out duration-300 hover:scale-105 md:w-64  dark:text-white bg-VeryLightGray text-VeryDarkBlue dark:bg-DarkBlue shadow-md hover:shadow-2xl"
         onClick={navigateToDetail}
       >
         <div className="">
