@@ -26,7 +26,7 @@ const CountryData = ({ country }) => {
     }
   }, [country.borders]);
 
-  const navigatetoborder = (border) => {
+  const navigateToBorderCountry = (border) => {
     navigate(`/detail/${border.name.common}`);
     console.log(" navigating to : ", border.name.common);
   };
@@ -94,13 +94,12 @@ const CountryData = ({ country }) => {
                   <span
                     className="bg-gray-200 dark:bg-DarkGray dark:text-DarkBlue block py-[6px] px-[8px] rounded-sm border dark:border-black  hover:border hover:border-black dark:hover:border-white"
                     key={border.cca3}
-                    onClick={() => navigatetoborder(border)}
+                    onClick={() => navigateToBorderCountry(border)}
                   >
                     {border.name.common}{" "}
                   </span>
                 ))}
               </div>
-             
             </>
           )}
         </div>

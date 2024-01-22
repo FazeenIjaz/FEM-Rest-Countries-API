@@ -18,10 +18,11 @@ const CountryDetail = () => {
       const response = await axios.get(
         `https://restcountries.com/v3.1/name/${name}?fullText=true`
       );
+
       setCountry(response.data);
     };
     fetchData();
-  }, []);
+  }, [name]);
   return (
     <div className="px-5 md:px-10 pt-8 min-h-screen dark:bg-VeryDarkerBlue dark:text-white bg-VeryLightGray text-VeryDarkBlue">
       <button
@@ -31,13 +32,13 @@ const CountryDetail = () => {
         <IoArrowBackOutline />
         Back
       </button>
-      {
-        country.length > 0 ? (<CountryData country={country[0]} />) : ( 
+      {country.length > 0 ? (
+        <CountryData country={country[0]} />
+      ) : (
         <div className="flex items-center justify-center">
-            <p className="text-[20px]">Loading...</p>
+          <p className="text-[20px]">Loading...</p>
         </div>
-        )
-      }
+      )}
     </div>
   );
 };
